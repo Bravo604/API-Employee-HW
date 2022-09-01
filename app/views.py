@@ -25,3 +25,8 @@ def employee_list(request):
 class PositionListCreateAPIView(ListCreateAPIView):
     queryset = Position.objects.all()
     serializer_class = PositionSerializer
+
+
+class EmployeeListCreateAPIView(ListCreateAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer

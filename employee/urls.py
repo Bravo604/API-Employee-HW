@@ -19,6 +19,7 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', views.PositionListCreateAPIView.as_view()),
+    path('api/position/', views.PositionListCreateAPIView.as_view()),
+    path('api/employee/', views.EmployeeListCreateAPIView.as_view()),
     path('api/employees/', views.employee_list),
 ]
